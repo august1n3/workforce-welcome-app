@@ -1,0 +1,60 @@
+.signup-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 5vh;
+    background-color: white;
+    padding: 4vw;
+    width: 80vw;
+    border-radius: 2em;
+}
+
+form{
+    display: flex;
+    margin-top: 4vh;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.single-fields input, input::placeholder{
+    background-color: rgb(171, 148, 255);
+    padding: 1em;
+    border: none;
+    width: 65vw;
+    border-radius: 1em;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.row-fields{
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+
+}
+
+.row-fields input{
+    background-color: rgb(171, 148, 255);
+    padding: 1em;
+    border: none;
+    width: 30vw;
+    border-radius: 1em;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+button{
+    padding: 1vw;
+    background-color:#4ba1fc;
+    border: none;
+    width: 20vw;
+    margin-inline: auto;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+  }

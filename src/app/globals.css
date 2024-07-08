@@ -1,33 +1,92 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  cursor:default;
+}
+a, a *{
+  cursor: pointer;
+}
+body{
+  background-color: #F2F2F2;
+}
+.logo{
+  margin: 1vw;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.header{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right,#8732af,#4ba1fc);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.signInButton{
+  margin: 1vw;
+  padding: 1vw;
+  border: 2px solid white ;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.heading-section{
+  text-align: center;
+  color: #2F0943;
+  padding-top: 4vh;
+}
+
+.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1ch;
+}
+.heading h1{
+  font-size: 2em;
+  font-weight: 500;
+  color: #2F0943;
+}
+.heading .brandname{
+  color: #3270af;
+}
+.hero-section{
+  display: flex;
+  margin-inline: auto;
+  margin-top: 5vh;
+  background-color: white;
+  padding: 4vw;
+  width: 80vw;
+  border-radius: 2em;
+}
+.hero-section .text{
+  color: #2F0943;
+  font-size: 3em;
+  font-weight: 100;
+}
+.getstarted-buttons{
+  margin-top: 5vh;
+  padding: 4vw;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.2em;
+  gap: 10%;
+}
+.purple-buttons{
+  padding: 1vw;
+  background-color: #8732af;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+.blue-buttons{
+  padding: 1vw;
+  background-color:#4ba1fc;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
 }
