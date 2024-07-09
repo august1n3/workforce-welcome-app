@@ -84,7 +84,7 @@ export default function Home() {
             <div><input 
             type="password" 
             name="Passowrd" 
-            placeholder="Enter passwoord"
+            placeholder="Enter password"
             value={Password}
             onChange={(e) => {setPassword(e.target.value)}}
             /></div>
